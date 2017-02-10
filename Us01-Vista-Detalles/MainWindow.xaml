@@ -5,8 +5,70 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Us01_Vista_Detalles"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+         Title="Cosulta os clientes"  
+        SizeToContent="WidthAndHeight" Loaded="carga">
+
+    <DockPanel  LastChildFill="true" Margin="15" >
+        <DockPanel LastChildFill="True" DockPanel.Dock="Left">
+            <Label DockPanel.Dock="Top" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" Foreground="White" FontWeight="Bold">Lista de Clientes</Label>
+            <ListBox x:Name="lstClients" Width="149" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Visible" SelectionChanged="cambioseleccionado"></ListBox>            
+        </DockPanel>
+        <Grid Margin="15,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Uid="RowDefinition_1">
+
+                </RowDefinition>
+                <RowDefinition x:Uid="RowDefinition_2">
+                </RowDefinition>
+                <RowDefinition x:Uid="RowDefinition_3">
+                </RowDefinition>
+                <RowDefinition x:Uid="RowDefinition_4">
+                </RowDefinition>
+                <RowDefinition x:Uid="RowDefinition_5">
+                </RowDefinition>
+                <RowDefinition x:Uid="RowDefinition_6">
+                </RowDefinition>
+                <RowDefinition x:Uid="RowDefinition_7">
+                </RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Uid="ColumnDefinition_1"></ColumnDefinition>
+                <ColumnDefinition x:Uid="ColumnDefinition_2"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label x:Uid="Label_2" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" FontWeight="Bold">
+                Datos del cliente</Label>
+            <Label x:Uid="Label_3" Grid.Column="0" Grid.Row="1"  FontSize="12" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Padding="5,5,20,5">
+                CIF:</Label>
+            <Label x:Uid="Label_4" Grid.Column="0" Grid.Row="2"  FontSize="12" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Padding="5,5,20,5">
+                Nome:</Label>
+            <Label   x:Uid="Label_5" Grid.Column="0" Grid.Row="3"  FontSize="12" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Padding="5,5,20,5">
+                Teléfono:</Label>
+            <Label x:Uid="Label_6" Grid.Column="0" Grid.Row="4"  FontSize="12" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Padding="5,5,20,5">
+                Persoa de contacto:</Label>
+            <Label x:Uid="Label_7" Grid.Column="0" Grid.Row="5"  FontSize="12" FontWeight="Bold" HorizontalAlignment="Right" VerticalAlignment="Center" Padding="5,5,20,5">
+                E-mail</Label>
+            <Label x:Uid="lblCIF" x:Name="lblCIF" Grid.Column="1" Grid.Row="1"  FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="20,5,5,5" Foreground="#FF569CD6">
+                3551234</Label>
+            <Label x:Uid="lblName" x:Name="lblName" Grid.Column="1" Grid.Row="2"  FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="20,5,5,5" Foreground="#FF569CD6">
+                IES Teis</Label>
+            <Label x:Uid="lblPhone" x:Name="lblPhone" Grid.Column="2" Grid.Row="3"  FontSize="12" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="20,5,5,5" Foreground="#FF569CD6">
+                0862611121</Label>
+            <Label x:Uid="lblContactPerson" x:Name="lblContactPerson" Grid.Column="1" Grid.Row="4"  FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="20,5,5,5" Foreground="#FF569CD6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+
+                Daniel Medina Méndez
+            </Label>
+            <Label x:Uid="lblEmail" x:Name="lblEmail" Grid.Column="1" Grid.Row="5"  FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="20,5,5,5" Foreground="#FF569CD6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+
+                daniel@edu.xunta.es
+            </Label>
+            <Button x:Uid="btbDelete"  x:Name="btbDelete" Grid.Column="0" Grid.Row="6"  FontSize="12" VerticalAlignment="Center"  Foreground="#FF569CD6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Margin="0,20,20,20" HorizontalAlignment="Right" Padding="5">
+
+                Borrar
+            </Button>
+            <Button x:Uid="btbCancel" x:Name="btbCancel" Grid.Column="1" Grid.Row="6"  FontSize="12" VerticalAlignment="Center"  Foreground="#FF569CD6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Margin="20,20,0,20" HorizontalAlignment="Left" Padding="5" Content="Cancelar" HorizontalContentAlignment="Left"/>
+        </Grid>
+    </DockPanel>
+                    
+
+
 </Window>
