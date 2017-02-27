@@ -61,11 +61,29 @@
 
                 daniel@edu.xunta.es
             </Label>
-            <Button x:Uid="btbDelete"  x:Name="btbDelete" Grid.Column="0" Grid.Row="6"  FontSize="12" VerticalAlignment="Center"  Foreground="#FF569CD6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Margin="0,20,20,20" HorizontalAlignment="Right" Padding="5">
+            <Grid HorizontalAlignment="Right" Grid.IsSharedSizeScope="true" Grid.Column="1" Grid.Row="6" Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                    <ColumnDefinition SharedSizeGroup="A"/>
+                </Grid.ColumnDefinitions>
+                <Grid.Children>                                      
+                        <Button x:Uid="btbDelete"  Grid.Column="0" x:Name="btbDelete"  FontSize="12"  Foreground="#FF569CD6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Padding="5" VerticalAlignment="Bottom" >
 
-                Borrar
-            </Button>
-            <Button x:Uid="btbCancel" x:Name="btbCancel" Grid.Column="1" Grid.Row="6"  FontSize="12" VerticalAlignment="Center"  Foreground="#FF569CD6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Margin="20,20,0,20" HorizontalAlignment="Left" Padding="5" Content="Cancelar" HorizontalContentAlignment="Left"/>
+                            Borrar
+                        </Button>
+                        <Button x:Uid="btbCancel" Grid.Column="1" x:Name="btbCancel"  FontSize="12" VerticalAlignment="Bottom"  Foreground="#FF569CD6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5"  Padding="5" Content="Cancelar" HorizontalContentAlignment="Left" Margin="5,0,0,0"/>
+
+                </Grid.Children>
+            </Grid>
+            <!--<StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="6" >
+                <Button x:Uid="btbDelete"  x:Name="btbDelete"  FontSize="12"  Foreground="#FF569CD6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Padding="5" VerticalAlignment="Center">
+
+                    Borrar
+                </Button>
+                <Button x:Uid="btbCancel" x:Name="btbCancel"  FontSize="12" VerticalAlignment="Center"  Foreground="#FF569CD6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5"  HorizontalAlignment="Left" Padding="5" Content="Cancelar" HorizontalContentAlignment="Left"/>
+
+            </StackPanel>-->
+            
         </Grid>
     </DockPanel>
                     
