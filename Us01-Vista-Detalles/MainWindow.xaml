@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Us01_Vista_Detalles"
         mc:Ignorable="d"
          Title="Cosulta os clientes"  
-        SizeToContent="WidthAndHeight" Loaded="carga">
+        SizeToContent="WidthAndHeight" Loaded="carga" StateChanged="cambioTamano">
 
     <DockPanel  LastChildFill="true" Margin="15" >
         <DockPanel LastChildFill="True" DockPanel.Dock="Left">
@@ -67,7 +67,7 @@
                     <ColumnDefinition SharedSizeGroup="A"/>
                 </Grid.ColumnDefinitions>
                 <Grid.Children>                                      
-                        <Button x:Uid="btbDelete"  Grid.Column="0" x:Name="btbDelete"  FontSize="12"  Foreground="#FF569CD6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Padding="5" VerticalAlignment="Bottom" >
+                        <Button x:Uid="btbDelete"  Grid.Column="0" x:Name="btbDelete"  FontSize="12"  Foreground="#FF569CD6" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Padding="5" VerticalAlignment="Bottom"  >
 
                             Borrar
                         </Button>

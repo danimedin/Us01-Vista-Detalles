@@ -55,5 +55,12 @@ namespace Us01_Vista_Detalles
 
             }
         }
+
+  
+        private void cambioTamano(object sender, EventArgs e)
+        {
+            if (this.WindowState == WindowState.Normal)
+                this.SizeToContent = SizeToContent.WidthAndHeight;
+        }
     }
 }
